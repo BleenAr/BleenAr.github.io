@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FixAR | Buscar técnico</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html"
+           class="logo">
+            Fix<span>AR</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="tecnicos.html">
+                Buscar técnico
+            </a>
+
+            <a href="registro.html"
+               target="_blank">
+                Soy técnico
+            </a>
+
+            <a href="registro.html"
+               target="_blank"
+               class="btn-register">
+                Registrarse
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="tecnicos-page">
+
+
+    <section class="search-header">
+
+        <span class="hero-tag">
+            FixAR
+        </span>
+
+        <h1>
+            Encontrá un técnico
+        </h1>
+
+        <p>
+            Buscá por nombre, especialidad o localidad.
+        </p>
+
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="busqueda"
+                placeholder="Ej: Electricista, Castelar..."
+                autocomplete="off"
+            >
+
+            <button
+                type="button"
+                id="botonBuscar">
+                Buscar
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="results-section">
+
+        <div class="results-top">
+
+            <h2>
+                Técnicos disponibles
+            </h2>
+
+            <span id="cantidadResultados">
+                0 técnicos
+            </span>
+
+        </div>
+
+
+        <div
+            id="resultados"
+            class="technicians-grid">
+        </div>
+
+
+        <div
+            id="sinResultados"
+            class="sin-resultados">
+
+            <h3>
+                No encontramos técnicos
+            </h3>
+
+            <p>
+                Probá buscando otra especialidad o localidad.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

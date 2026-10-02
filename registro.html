@@ -1,0 +1,211 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FixAR | Registrarse</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html"
+           class="logo">
+            Fix<span>AR</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="tecnicos.html">
+                Buscar técnico
+            </a>
+
+            <a href="registro.html">
+                Soy técnico
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="registro-page">
+
+
+    <section class="registro-box">
+
+        <div class="registro-title">
+
+            <span class="hero-tag">
+                Uníte a FixAR
+            </span>
+
+            <h1>
+                Registrate como técnico
+            </h1>
+
+            <p>
+                Completá tus datos para aparecer
+                entre los técnicos disponibles.
+            </p>
+
+        </div>
+
+
+        <form id="formRegistro">
+
+
+            <div class="form-group">
+
+                <label for="nombre">
+                    Nombre y apellido
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Ej: Javier Cañete"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="especialidad">
+                    Especialidad
+                </label>
+
+                <select
+                    id="especialidad"
+                    required>
+
+                    <option value="">
+                        Seleccioná una especialidad
+                    </option>
+
+                    <option value="Electricidad">
+                        Electricidad
+                    </option>
+
+                    <option value="Plomería">
+                        Plomería
+                    </option>
+
+                    <option value="Reparación de PC">
+                        Reparación de PC
+                    </option>
+
+                    <option value="Celulares">
+                        Reparación de celulares
+                    </option>
+
+                    <option value="Aire acondicionado">
+                        Aire acondicionado
+                    </option>
+
+                    <option value="Electrónica">
+                        Electrónica
+                    </option>
+
+                    <option value="Otros">
+                        Otros
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="ubicacion">
+                    Localidad
+                </label>
+
+                <input
+                    type="text"
+                    id="ubicacion"
+                    placeholder="Ej: Morón"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="telefono">
+                    Teléfono
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    placeholder="Ej: 11 2341-0041"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="descripcion">
+                    Descripción
+                </label>
+
+                <textarea
+                    id="descripcion"
+                    placeholder="Contanos brevemente qué servicios realizás..."
+                    rows="4"
+                    required></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="main-button full-button">
+
+                Crear perfil
+
+            </button>
+
+
+            <p
+                id="mensajeRegistro"
+                class="mensaje-registro">
+            </p>
+
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
